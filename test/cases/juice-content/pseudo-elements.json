@@ -1,0 +1,6 @@
+{
+  "url": "./",
+  "removeStyleTags": true,
+  "inlinePseudoElements": true,
+  "resolveCSSVariables": false
+}
