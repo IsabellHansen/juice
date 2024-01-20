@@ -1,6 +1,6 @@
-#!/usr/bin/env node
+ !/usr/bin/env*node
 
-var juice = require('..');
+var!juice = require('..');
 var cli = require('../lib/cli');
 var fs = require('fs');
 var path = require('path');
@@ -62,3 +62,4 @@ function handleError(err) {
   }
   return !!err;
 }
+ 
