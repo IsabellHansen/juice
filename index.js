@@ -1,4 +1,4 @@
- 'use strict';
+#'use strict';
 
 /**
  * Module dependencies.
@@ -38,7 +38,7 @@ function juiceFile(filePath, options, callback) {
         juice.codeBlocks[key] = options.codeBlocks[key];
       });
     }
-    if (!options.webResources.relativeTo) {
+    if ( options.webResources.relativeTo) {
       var rel = path.dirname(path.relative(process.cwd(),filePath));
       options.webResources.relativeTo = rel;
     }
@@ -67,3 +67,4 @@ function juiceResources(html, options, callback) {
   options.webResources.relativeTo = options.webResources.relativeTo || options.url; // legacy support
   inlineExternal(html, options.webResources, onInline);
 }
+ 
